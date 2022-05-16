@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .all-singup-area {
+            height: 500px;
+            width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+        }
+        
+        .logo-area {
+            height: 470px;
+            width: 430px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*background-color: yellow;*/
+        }
+        
+        .central-container {
+            height: 470px;
+            width: 470px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*background-color: green;*/
+        }
+        
+        #logo {
+            height: 470px;
+            width: 400px;
+        }
+        
+        .form {
+            text-align: center;
+            padding-right: 15px;
+        }
+        
+        .form h2 {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        
+        .form span {
+            font-size: 0.9em;
+        }
+        
+        .input-area {
+            margin-top: 10px;
+        }
+        
+        .input-area input {
+            border: none;
+            border-bottom: 1px solid #8888;
+            width: 250px;
+            margin-top: 20px;
+            padding-left: 50px;
+        }
+        
+        #btn-cadastrar {
+            height: 40px;
+            width: 200px;
+            border: none;
+            background-color: aqua;
+            border-radius: 15px;
+            margin-top: 40px;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .footer {
+            margin-left: 140px;
+            width: 200px;
+        }
+        
+        #btn-cadastrar {
+            margin-bottom: 20px;
+        }
+        
+        #change {
+            text-decoration: none;
+            color: aqua;
+        }
+    </style>
+    <section class="all-singup-area">
+        <header class="logo-area">
+            <img src="./img/logo.png" id="logo">
+        </header>
+        <section class="central-container">
+            <main class="form">
+                <h2>Crie sua conta agora</h2>
+                <span>Tenha acesso a centenas de livros e trabalhos</span>
+                <form action="#">
+                    <div class="input-area">
+                        <i></i>
+                        <input type="text" name="username" id="username" placeholder="Usuário" required>
+                        <i></i>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <i></i>
+                        <input type="password" name="password" id="password" placeholder="Senha" required>
+                    </div>
+                    <div class="footer">
+                        <input type="button" value="Cadastrar" id="btn-cadastrar">
+                        <span class="singin-text">Já possuí uma conta? <a href="#" id="change">Clique aqui!</a></span>
+                    </div>
+                </form>
+            </main>
+
+        </section>
+    </section>
+</body>
+
+</html>
